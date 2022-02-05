@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       (currentSnake[0] % width === width - 1 && direction === 1) || //if snake hits right wall
       (currentSnake[0] % width === 0 && direction === -1) || //if snake hits left wall
       (currentSnake[0] - width < 0 && direction === -width) || //if snake hits the top wall
-      squares[currentSnake[0] + direction].classList.contains["snake"] //if snake goes into self
+      squares[currentSnake[0] + direction].classList.contains("snake") //if snake goes into self
     ) {
       return clearInterval(interval);
     }
